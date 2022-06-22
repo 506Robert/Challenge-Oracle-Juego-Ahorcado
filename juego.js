@@ -69,10 +69,10 @@ function clickLetras(event){
     }
 
     if(cantErrores == 6){
-        id('resultado').innerHTML = "Perdiste! La palabra era: "+ palabraAzar;
+        id('resultado').innerHTML = "<h1 style= font-size:25px;>Perdiste! La palabra era:</h1>"+ palabraAzar;
         gameOver();
     }else if(cantAciertos == palabraAzar.length){
-        id('resultado').innerHTML = "Acertaste.!";
+        id('resultado').innerHTML = "<h1 style= font-size:40px;>Acertaste.!</h1>";
         gameOver();
     }
     console.log( "la letra " + letra + " en la palabra " + palabra + " ¿existe?: " + acerto );
