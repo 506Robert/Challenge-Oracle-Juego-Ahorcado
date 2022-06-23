@@ -33,7 +33,7 @@ function agregarPalabra(){
     alert('La palabra "' + nuevaPalabra + '" ya se encuentra en la lista');
     inputNuevaPalabra.value = "";
   } if (nuevaPalabra.length == 0) {
-    alert('No ingreso ninguna palabra');
+    alert('No ingreso ninguna palabra!');
     return;
   } if (!criterio.test(nuevaPalabra)){
     alert('No se admiten espacios, numeros ni caracteres especiales');
