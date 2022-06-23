@@ -36,6 +36,6 @@ function agregarPalabra(){
     alert('No ingreso ninguna palabra!');
     return;
   } if (!criterio.test(nuevaPalabra)){
-    alert('No se admiten espacios, numeros ni caracteres especiales');
+    alert('No se admiten espacios, numeros ni caracteres especiales!');
   } 
 };
