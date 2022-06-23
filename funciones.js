@@ -25,17 +25,17 @@ function agregarPalabra(){
   if(palabras.indexOf(nuevaPalabra) < 0 && criterio.test(nuevaPalabra)){
   palabras.push(nuevaPalabra);
   localStorage.setItem('myArray', JSON.stringify(palabras));
-  alert ('se agrego "'+ nuevaPalabra +'" a la lista');
+  alert ('Se agrego "'+ nuevaPalabra +'" a la lista');
   inputNuevaPalabra.value = "";
   return;
 
   } if (palabras.indexOf(nuevaPalabra) > 0){
-    alert('la palabra "' + nuevaPalabra + '" ya se encuentra en la lista');
+    alert('La palabra "' + nuevaPalabra + '" ya se encuentra en la lista');
     inputNuevaPalabra.value = "";
   } if (nuevaPalabra.length == 0) {
-    alert('no ingreso ninguna palabra');
+    alert('No ingreso ninguna palabra');
     return;
   } if (!criterio.test(nuevaPalabra)){
-    alert('solo se admiten letras (sin espacios ni numeros)');
+    alert('No se admiten espacios, numeros ni caracteres especiales');
   } 
 };
